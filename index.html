@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./images/css/materialize.css" media="screen,projection" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col s12 m12 l6">
+                <h1>{{user.fullName}}</h1><br>
+            </div>
+            <div class="col s12 m12 l6">
+                <img src="{{user.photo}}" alt="Cape Town" width="50%"><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="divider"></div>
+        <h2>{{city.name}}</h2>
+        <div class="row">
+            <div class="col s12 m12 l6">
+                <img src="{{city.photo}}" width="75%"><br>
+            </div>
+            <div class="col s12 m12 l6">
+                <p>{{city.description}}</p><br>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="divider"></div>
+        <h2>Foreign Language</h2><br>
+        <h3>{{foreignLanguage.language}}</h3><br>
+        <div class="row">
+            <table>
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Swahili</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each foreignLanguage.phrases}}
+                    <tr>
+                        <td>{{englishPhrase}}</td>
+                        <td>{{foreignLanguage}}</td>
+
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table><br>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="divider"></div>
+        <h3>Favorite Subjects</h3><br>
+        <div class="row">
+            {{#each favouriteSubjects}}
+            <div class="col l4 s12 m12">
+                <h4>{{this.name}}</h4><br>
+                <div class="row">
+                    <div class="col l6 s6 m6">
+                        <li>{{this.description_line1}}</li><br>
+                        <li>{{this.description_line2}}</li><br>
+                    </div>
+                    <div class="col l6 s6 m6">
+                        <img src="{{this.photo}}" width="75%"><br><br>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="divider"></div>
+        <h3>Historical places in my city</h3><br>
+        <div class="row">
+            {{#each HistoricalPlaces}}
+            <div class="col l4 s12 m12">
+                <h4>{{this.name}}</h4><br>
+                <div class="row">
+                    <div class=" col l6 s6 m6">
+
+                        <li>{{this.interest_line1}}</li><br>
+                        <li>{{this.interest_line2}}</li><br>
+                        <li>{{this.interest_line3}}</li><br>
+
+                    </div>
+                    <div class="col l6 s6 m6">
+                        <img src="/images/{{this.photo}}" width="75%"><br>
+                    </div>
+
+                </div>
+
+            </div>
+            {{/each}}
+
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</body>
+
+</html>
