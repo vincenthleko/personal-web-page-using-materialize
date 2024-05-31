@@ -51,21 +51,21 @@
             "interest_line1": "Home to the Constitutional Court of South Africa the highest court in the country on constitutional matters.",
             "interest_line2": "Once a place of injustice and brutality where South Africa's leading political activists including Nelson Mandela and Mahatma Gandhi were detained.",
             "interest_line3": "Number Four Museum and Old Fort Museum",
-            "photo": "constitutional hill[1]-Photoroom.jpeg"
+            "photo": "./images/constitutional hill[1]-Photoroom.jpeg"
         },
         {
             "name": "Walter Sisulu square",
             "interest_line1": "The Square celebrate what township life is all about, its people, their spirit, their passion and aspirations.",
             "interest_line2": "The square has over 10 retail shop, 6 commercial offices, banks and service providers.",
             "interest_line3": "Walter Sisulu Square in the heart of Kliptown , Soweto, is South Africa’s first township entertainment explosion centre.",
-            "photo": "walter sisulu-Photoroom.jpeg"
+            "photo": "./images/walter sisulu-Photoroom.jpeg"
         },
         {
             "name": "Johannesburg Fort",
             "interest_line1": "Built in 1893 by President Paul Kruger.",
             "interest_line2": "Nelson Mandela was the only black prisoner to serve time at the Old Fort.",
             "interest_line3": "Johannesburg's first prison and first military fort",
-            "photo": "johannesburg.fort-Photoroom (1).jpeg"
+            "photo": "./images/johannesburg.fort-Photoroom (1).jpeg"
         }
     ]
    
