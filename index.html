@@ -1,123 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</head>
+    <style>
+      .footer {
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
 
-<body>
-
-    <div style="background-image: url('./images/Table-Mountain-South-Africa-631.jpg') ;" class="container">
-        <div class="divider"></div>
-        <div class="row">
-            <div class="col s12 m12 l6">
-                <h1>{{user.fullName}}</h1><br>
-            </div>
-            <div class="col s12 m12 l6">
-                <img src="{{user.photo}}" alt="Cape Town" class="responsive-img circle" height='50'><br>
-            </div>
+  <body class="blue-grey lighten-1">
+    <div
+      style="
+        background-image: url('./images/Table-Mountain-South-Africa-631.jpg');
+      "
+      class="container"
+    >
+      <div class="divider"></div>
+      <div class="row">
+        <div class="col s12 m12 l6">
+          <h1>{{user.fullName}}</h1>
+          <br />
         </div>
+        <div class="col s12 m12 l6">
+          <img
+            src="{{user.photo}}"
+            alt="Cape Town"
+            class="responsive-img circle"
+            height="50"
+          /><br />
+        </div>
+      </div>
     </div>
 
     <div class="container">
-        <div class="divider"></div>
-        <h2>{{city.name}}</h2>
-        <div class="row">
-            <div class="col s12 m12 l6">
-                <img src="{{city.photo}}" width="75%"><br>
-            </div>
-            <div class="col s12 m12 l6">
-                <p>{{city.description}}</p><br>
-            </div>
+      <div class="divider"></div>
+      <h2>{{city.name}}</h2>
+      <div class="row">
+        <div class="col s12 m12 l6">
+          <img src="{{city.photo}}" width="75%" /><br />
         </div>
-
+        <div class="col s12 m12 l6">
+          <p>{{city.description}}</p>
+          <br />
+        </div>
+      </div>
     </div>
 
     <div class="container">
-        <div class="divider"></div>
-        <h2>Foreign Language</h2><br>
-        <h3>{{foreignLanguage.language}}</h3><br>
-        <div class="row">
-            <table>
-                <thead>
-                    <tr>
-                        <th>English</th>
-                        <th>Swahili</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {{#each foreignLanguage.phrases}}
-                    <tr>
-                        <td>{{englishPhrase}}</td>
-                        <td>{{foreignLanguage}}</td>
-
-                    </tr>
-                    {{/each}}
-                </tbody>
-            </table><br>
-        </div>
-
-    </div>
-
-    <div class="container">
-        <div class="divider"></div>
-        <h3>Favorite Subjects</h3><br>
-        <div class="row">
-            {{#each favouriteSubjects}}
-            <div class="col l4 s12 m12">
-                <h4>{{this.name}}</h4><br>
-                <div class="row">
-                    <div class="col l6 s6 m6">
-                        <li>{{this.description_line1}}</li><br>
-                        <li>{{this.description_line2}}</li><br>
-                    </div>
-                    <div class="col l6 s6 m6">
-                        <img src="{{this.photo}}" width="75%"><br><br>
-                    </div>
-                </div>
-            </div>
+      <div class="divider"></div>
+      <h2>Foreign Language</h2>
+      <br />
+      <h3>{{foreignLanguage.language}}</h3>
+      <br />
+      <div class="row">
+        <table>
+          <thead>
+            <tr>
+              <th>English</th>
+              <th>Swahili</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each foreignLanguage.phrases}}
+            <tr>
+              <td>{{englishPhrase}}</td>
+              <td>{{foreignLanguage}}</td>
+            </tr>
             {{/each}}
-
-        </div>
+          </tbody>
+        </table>
+        <br />
+      </div>
     </div>
-
 
     <div class="container">
-        <div class="divider"></div>
-        <h3>Historical places in my city</h3><br>
-        <div class="row">
-            {{#each HistoricalPlaces}}
-            <div class="col l4 s12 m12">
-                <h4>{{this.name}}</h4><br>
-                <div class="row">
-                    <div class=" col l6 s6 m6">
-
-                        <li>{{this.interest_line1}}</li><br>
-                        <li>{{this.interest_line2}}</li><br>
-                        <li>{{this.interest_line3}}</li><br>
-
-                    </div>
-                    <div class="col l6 s6 m6">
-                        <img src="{{this.photo}}" width="75%"><br>
-                    </div>
-
-                </div>
-
+      <div class="divider"></div>
+      <h3>Favorite Subjects</h3>
+      <br />
+      <div class="row">
+        {{#each favouriteSubjects}}
+        <div class="col l4 s12 m12">
+          <h4>{{this.name}}</h4>
+          <br />
+          <div class="row">
+            <div class="col l6 s6 m6">
+              <li>{{this.description_line1}}</li>
+              <br />
+              <li>{{this.description_line2}}</li>
+              <br />
             </div>
-            {{/each}}
-
+            <div class="col l6 s6 m6">
+              <img src="{{this.photo}}" width="75%" /><br /><br />
+            </div>
+          </div>
         </div>
+        {{/each}}
+      </div>
     </div>
 
+    <div class="container">
+      <div class="divider"></div>
+      <h3>Historical places in my city</h3>
+      <br />
+      <div class="row">
+        {{#each HistoricalPlaces}}
+        <div class="col l4 s12 m12">
+          <h4>{{this.name}}</h4>
+          <br />
+          <div class="row">
+            <div class="col l6 s6 m6">
+              <li>{{this.interest_line1}}</li>
+              <br />
+              <li>{{this.interest_line2}}</li>
+              <br />
+              <li>{{this.interest_line3}}</li>
+              <br />
+            </div>
+            <div class="col l6 s6 m6">
+              <img src="{{this.photo}}" width="75%" /><br />
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
 
-
+    <footer class="footer blue-grey">
+      <p>&copy; 2024 My Personal Webpage</p>
+      <address>
+        Contact me:
+        <a href="mailto:vincenthleko95@gmail.com">vincenthleko95@gmail.com</a>
+      </address>
+    </footer>
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
-
-</body>
-
+  </body>
 </html>
