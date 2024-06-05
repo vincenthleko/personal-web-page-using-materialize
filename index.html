@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="./images/css/materialize.css" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 
 <body>
 
-    <div class="container">
+    <div style="background-image: url('public/images/Table-Mountain-South-Africa-631.jpg') ;" class="container">
         <div class="divider"></div>
         <div class="row">
             <div class="col s12 m12 l6">
                 <h1>{{user.fullName}}</h1><br>
             </div>
             <div class="col s12 m12 l6">
-                <img src="{{user.photo}}" alt="Cape Town" width="50%"><br>
+                <img src="{{user.photo}}" alt="Cape Town" class="responsive-img circle" height='50'><br>
             </div>
         </div>
     </div>
