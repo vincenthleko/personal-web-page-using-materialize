@@ -14,6 +14,15 @@
         padding: 20px;
         text-align: center;
       }
+      
+      @media (max-width: 600px) {
+        .zig-text {
+          float: right !important;
+        }
+        .zig-img {
+          float: left !important;
+        }
+      }
     </style>
   </head>
 
@@ -43,7 +52,7 @@
 
     <div class="container">
       <div class="divider"></div>
-      <h2>{{city.name}}</h2>
+      <h2 class="center-align">{{city.name}}</h2>
       <div class="row">
         <div class="col s12 m12 l6">
           <img src="{{city.photo}}" width="75%" /><br />
@@ -57,7 +66,7 @@
 
     <div class="container">
       <div class="divider"></div>
-      <h2>Foreign Language</h2>
+      <h2 class="center-align">Foreign Language</h2>
       <br />
       <h3>{{foreignLanguage.language}}</h3>
       <br />
@@ -84,53 +93,75 @@
 
     <div class="container">
       <div class="divider"></div>
-      <h3>Favorite Subjects</h3>
+      <h3 class="center-align">Favorite Subjects</h3>
       <br />
       <div class="row">
-        {{#each favouriteSubjects}}
-        <div class="col l4 s12 m12">
-          <h4>{{this.name}}</h4>
-          <br />
+        <div class="col l4 m12 s12">
           <div class="row">
-            <div class="col l6 s6 m6">
-              <li>{{this.description_line1}}</li>
-              <br />
-              <li>{{this.description_line2}}</li>
-              <br />
-            </div>
-            <div class="col l6 s6 m6">
-              <img src="{{this.photo}}" width="75%" /><br /><br />
+            <div><h4>{{favouriteSubjects.0.name}}</h4></div>
+            <div class="col m6 s6">{{favouriteSubjects.0.description}}</div>
+            <div class="col m6 s6">
+              <img src="{{favouriteSubjects.0.photo}}" width="150 px" />
             </div>
           </div>
         </div>
-        {{/each}}
+
+        <div class="col l4 m12 s12">
+          <div class="row">
+            <div><h4>{{favouriteSubjects.1.name}}</h4></div>
+            <div class="col m6 s6 zig-text">{{favouriteSubjects.1.description}}</div>
+            <div class="col m6 s6 zig-img">
+              <img src="{{favouriteSubjects.1.photo}}" width="150 px" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col l4 m12 s12">
+          <div class="row">
+            <div><h4>{{favouriteSubjects.2.name}}</h4></div>
+            <div class="col m6 s6">{{favouriteSubjects.2.description}}</div>
+            <div class="col m6 s6">
+              <img src="{{favouriteSubjects.2.photo}}" width="150 px" />
+            </div>
+          </div>
+        </div>
+
+        
       </div>
     </div>
-
+    
     <div class="container">
       <div class="divider"></div>
-      <h3>Historical places in my city</h3>
+      <h3 class="center-align">Historical places in my city</h3>
       <br />
       <div class="row">
-        {{#each HistoricalPlaces}}
-        <div class="col l4 s12 m12">
-          <h4>{{this.name}}</h4>
-          <br />
+        <div class="col l4 m12 s12">
           <div class="row">
-            <div class="col l6 s6 m6">
-              <li>{{this.interest_line1}}</li>
-              <br />
-              <li>{{this.interest_line2}}</li>
-              <br />
-              <li>{{this.interest_line3}}</li>
-              <br />
-            </div>
-            <div class="col l6 s6 m6">
-              <img src="{{this.photo}}" width="75%" /><br />
+            <div><h4>{{HistoricalPlaces.0.name}}</h4></div>
+            <div class="col m6 s6">{{HistoricalPlaces.0.interest}}</div>
+            <div class="col m6 s6">
+              <img src="{{HistoricalPlaces.0.photo}}" width="150 px" />
             </div>
           </div>
         </div>
-        {{/each}}
+        <div class="col l4 m12 s12">
+          <div class="row">
+            <div><h4>{{HistoricalPlaces.1.name}}</h4></div>
+            <div class="col m6 s6 zig-text">{{HistoricalPlaces.1.interest}}</div>
+            <div class="col m6 s6 zig-img">
+              <img src="{{HistoricalPlaces.1.photo}}" width="150 px" />
+            </div>
+          </div>
+        </div>
+        <div class="col l4 m12 s12">
+          <div class="row">
+            <div><h4>{{HistoricalPlaces.2.name}}</h4></div>
+            <div class="col m6 s6">{{HistoricalPlaces.2.interest}}</div>
+            <div class="col m6 s6">
+              <img src="{{HistoricalPlaces.2.photo}}" width="150 px" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

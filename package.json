@@ -27,10 +27,12 @@
     "dev": "vite",
     "test": "",
     "build": "vite build"
-
   },
   "devDependencies": {
     "vite": "^5.2.11",
     "vite-plugin-handlebars": "^2.0.0"
+  },
+  "dependencies": {
+    "handlebars-helpers": "^0.10.0"
   }
 }

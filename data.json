@@ -1,72 +1,74 @@
 {
-    "user": {
-        "fullName": "Vincent Itumeleng Hleko",
-        "photo": "./images/cv profile pic.jpg"
-    },
-    "city": {
-        "name": "Cape Town",
-        "photo": "https://traveler.marriott.com/wp-content/uploads/2022/12/aerial-view-cape-town-stadium-cape-town-south-africa-1920x1080-1.jpg",
-        "description": "I would like to visit Cape Town for its breathtaking natural beauty, diverse culture, and vibrant atmosphere. Nestled between the iconic Table Mountain and the Atlantic Ocean, Cape Town offers stunning landscapes that captivate visitors. Beyond its scenic allure, the city boasts a rich tapestry of cultures, reflected in its cuisine, music, and art. From exploring historic neighborhoods like Bo-Kaap to indulging in world-class dining along the Victoria & Alfred Waterfront, Cape Town offers a dynamic blend of experiences. Whether hiking to the summit of Table Mountain, embarking on a wine tour in nearby Stellenbosch, or simply soaking in the sun on its pristine beaches, Cape Town promises an unforgettable adventure for every traveler."
-    },
-    "foreignLanguage": {
-        "language": "Swahili",
-        "phrases": [
-            {
-                "englishPhrase": "Hello",
-                "foreignLanguage": "Habari"
-            },
-            {
-                "englishPhrase": "Goodbye",
-                "foreignLanguage": "Kwaheri"
-            },
-            {
-                "englishPhrase": "Name",
-                "foreignLanguage": "Jina"
-            }
-        ]
-    },
-    "favouriteSubjects": [
-        {
-            "name": "Mathematics (statistics)",
-            "description_line1": "Qualification: BSc in life and environmental science",
-            "description_line2": "Institution: University of Johannesburg",
-            "photo": "https://online.stat.psu.edu/statprogram/sites/statprogram/files/2018-08/statistics-review.jpg"
-        },
-        {
-            "name": "Organic Chemistry",
-            "description_line1": "Qualification: BSc in life and environmental science",
-            "description_line2": "Institution: University of Johannesburg",
-            "photo": "https://thumbs.dreamstime.com/b/organic-chemistry-vector-colored-outline-round-illustration-concept-style-dark-background-147229210.jpg"
-        },
-        {
-            "name": "Physics",
-            "description_line1": "Qualification: BSc in life and environmental science", 
-            "description_line2": "Institution: University of Johannesburg",
-            "photo": "https://miro.medium.com/v2/resize:fit:1024/1*bWlRl9D3jkJR06_oO0cP_Q.png"
-        }
-    ],
-    "HistoricalPlaces": [
-        {
-            "name": "Constitutional hill human right precinct",
-            "interest_line1": "Home to the Constitutional Court of South Africa the highest court in the country on constitutional matters.",
-            "interest_line2": "Once a place of injustice and brutality where South Africa's leading political activists including Nelson Mandela and Mahatma Gandhi were detained.",
-            "interest_line3": "Number Four Museum and Old Fort Museum",
-            "photo": "./images/constitutional hill[1]-Photoroom.jpeg"
-        },
-        {
-            "name": "Walter Sisulu square",
-            "interest_line1": "The Square celebrate what township life is all about, its people, their spirit, their passion and aspirations.",
-            "interest_line2": "The square has over 10 retail shop, 6 commercial offices, banks and service providers.",
-            "interest_line3": "Walter Sisulu Square in the heart of Kliptown , Soweto, is South Africa’s first township entertainment explosion centre.",
-            "photo": "./images/walter sisulu-Photoroom.jpeg"
-        },
-        {
-            "name": "Johannesburg Fort",
-            "interest_line1": "Built in 1893 by President Paul Kruger.",
-            "interest_line2": "Nelson Mandela was the only black prisoner to serve time at the Old Fort.",
-            "interest_line3": "Johannesburg's first prison and first military fort",
-            "photo": "./images/johannesburg.fort-Photoroom (1).jpeg"
-        }
+  "user": {
+    "fullName": "Vincent Itumeleng Hleko",
+    "photo": "./images/cv profile pic.jpg"
+  },
+  "city": {
+    "name": "Cape Town",
+    "photo": "https://traveler.marriott.com/wp-content/uploads/2022/12/aerial-view-cape-town-stadium-cape-town-south-africa-1920x1080-1.jpg",
+    "description": "I would like to visit Cape Town for its breathtaking natural beauty, diverse culture, and vibrant atmosphere. Nestled between the iconic Table Mountain and the Atlantic Ocean, Cape Town offers stunning landscapes that captivate visitors. Beyond its scenic allure, the city boasts a rich tapestry of cultures, reflected in its cuisine, music, and art. From exploring historic neighborhoods like Bo-Kaap to indulging in world-class dining along the Victoria & Alfred Waterfront, Cape Town offers a dynamic blend of experiences. Whether hiking to the summit of Table Mountain, embarking on a wine tour in nearby Stellenbosch, or simply soaking in the sun on its pristine beaches, Cape Town promises an unforgettable adventure for every traveler."
+  },
+  "foreignLanguage": {
+    "language": "Swahili",
+    "phrases": [
+      {
+        "englishPhrase": "Hello",
+        "foreignLanguage": "Habari"
+      },
+      {
+        "englishPhrase": "Goodbye",
+        "foreignLanguage": "Kwaheri"
+      },
+      {
+        "englishPhrase": "Name",
+        "foreignLanguage": "Jina"
+      }
     ]
-   
+  },
+  "favouriteSubjects": [
+    {
+      "name": "Mathematics (statistics)",
+      "description":["Qualification: BSc in life and environmental science",
+       "Institution: University of Johannesburg"],
+      "photo": "https://online.stat.psu.edu/statprogram/sites/statprogram/files/2018-08/statistics-review.jpg"
+    },
+    {
+      "name": "Organic Chemistry",
+      "description": ["Qualification: BSc in life and environmental science",
+       "Institution: University of Johannesburg"],
+      "photo": "https://thumbs.dreamstime.com/b/organic-chemistry-vector-colored-outline-round-illustration-concept-style-dark-background-147229210.jpg"
+    },
+    {
+      "name": "Physics",
+      "description": ["Qualification: BSc in life and environmental science",
+       "Institution: University of Johannesburg"],
+      "photo": "https://miro.medium.com/v2/resize:fit:1024/1*bWlRl9D3jkJR06_oO0cP_Q.png"
+    }
+  ],
+
+  "HistoricalPlaces": [
+    {
+      "name": "Constitutional hill",
+      "interest": ["Home to the Constitutional Court of South Africa the highest court in the country on constitutional matters.",
+       "Once a place of injustice and brutality where South Africa's leading political activists including Nelson Mandela and Mahatma Gandhi were detained.",
+       "Number Four Museum and Old Fort Museum"],
+      "photo": "./images/constitutional hill[1]-Photoroom.jpeg"
+      
+    },
+    {
+      "name": "Walter Sisulu square",
+      "interest": ["The Square celebrate what township life is all about, its people, their spirit, their passion and aspirations.",
+       "The square has over 10 retail shop, 6 commercial offices, banks and service providers.",
+       "Walter Sisulu Square in the heart of Kliptown , Soweto, is South Africa’s first township entertainment explosion centre."],
+      "photo": "./images/walter sisulu-Photoroom.jpeg"
+    },
+    {
+      "name": "Johannesburg Fort",
+      "interest": ["Built in 1893 by President Paul Kruger.",
+       "Nelson Mandela was the only black prisoner to serve time at the Old Fort.",
+       "Johannesburg's first prison and first military fort"],
+      "photo": "./images/johannesburg.fort-Photoroom (1).jpeg"
+      
+    }
+  ]
 }
